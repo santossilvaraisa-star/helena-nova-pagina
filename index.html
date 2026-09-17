@@ -54,13 +54,13 @@
     </main>
 
     <script>
-        const botao = document.querySelector("button");
+        const botao = document.querySelectorAll("button");
         botoes.array.forEach(function (botao){
         botao.addEventListener("click",botaoClicado);
         });
 
         function botaoClicado() {
-            let texto = event.currentTarget.querySelector,("span");
+            let texto = event.currentTarget.querySelector("span");
             texto.textContent++;
         }
     </script>
